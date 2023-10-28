@@ -1,0 +1,95 @@
+@import './variaveis';
+
+.header { 
+    display: grid;
+    grid-template-columns: 20% 50% 15% 15%;
+    grid-template-rows: 100%;
+    gap: 1rem;
+    padding: .5rem  ;
+    background-color: $primary-color;
+    color: rgb(255, 255, 255);
+    height: 5rem;
+    font-family: 'Quicksand', sans-serif;
+
+    &_div {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        width: 50%;
+
+        // &:nth-child(-n+1) {
+        //     grid-column: 1 / 2;
+        //     grid-row: 1 / 2;
+        // }
+        // &:nth-child(-n+2) {
+        //     grid-column: 2 / 3;
+        //     grid-row: 1 / 2;
+        // }
+        // &:nth-child(-n+3) {
+        //     grid-column: 3 / 4;
+        //     grid-row: 1 / 2;
+        // }
+        // &:nth-child(-n+4) {
+        //     grid-column: 4 / 5;
+        //     grid-column: 1 / 2;
+        //     align-items: center;
+        // }
+        &-img{
+            transform: scale(0.6);
+        }
+        &_busca {
+            border:solid 10px rgba(47, 79, 79, 0.8);
+            border-radius:10px;
+            height:37px;
+            width:400px;
+            &-input {
+                float:left;
+                background-color: $white;
+                padding-left:5px;
+                font-size:18px;
+                border:none;
+                height: 2rem;
+                width: 18rem;
+                border-radius: 3px 0 0 3px;
+                &:active, &:focus {
+                    border: 0;
+                    outline: 0;
+                    box-shadow: 0 0 0 0 ;
+                }
+            }
+            &-button {
+                float:left;
+                cursor:pointer;
+                background-color: $light-gray;
+                height: 1.2rem;
+                padding: .45rem;
+                transition: .2s;
+                border-radius: 0 3px 3px 0;
+                &:hover {
+                    background-color: $light-gray-hover;
+                }
+            }
+            &-img {
+                float:left;
+               
+            }
+        }
+        &_carrinho {
+            
+            width: 2rem;
+            &-a {
+                width: 1rem;
+            }
+           &-img {
+                transform: scale(0.1);
+            }
+            
+        }
+    }
+
+    &_categoria {
+        background-color: $secondary-color;
+        height: 3rem;
+    }
+}   
+

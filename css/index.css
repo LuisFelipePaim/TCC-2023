@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 20% 50% 15% 15%;
+  grid-template-rows: 100%;
+  gap: 1rem;
+  padding: 0.5rem;
+  background-color: rgba(34, 147, 223, 0.808);
+  color: rgb(255, 255, 255);
+  height: 5rem;
+  font-family: "Quicksand", sans-serif;
+}
+.header_div {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 50%;
+}
+.header_div-img {
+  transform: scale(0.6);
+}
+.header_div_busca {
+  border: solid 10px rgba(47, 79, 79, 0.8);
+  border-radius: 10px;
+  height: 37px;
+  width: 400px;
+}
+.header_div_busca-input {
+  float: left;
+  background-color: rgb(255, 255, 255);
+  padding-left: 5px;
+  font-size: 18px;
+  border: none;
+  height: 2rem;
+  width: 18rem;
+  border-radius: 3px 0 0 3px;
+}
+.header_div_busca-input:active, .header_div_busca-input:focus {
+  border: 0;
+  outline: 0;
+  box-shadow: 0 0 0 0;
+}
+.header_div_busca-button {
+  float: left;
+  cursor: pointer;
+  background-color: rgb(228, 228, 228);
+  height: 1.2rem;
+  padding: 0.45rem;
+  transition: 0.2s;
+  border-radius: 0 3px 3px 0;
+}
+.header_div_busca-button:hover {
+  background-color: rgb(194, 194, 194);
+}
+.header_div_busca-img {
+  float: left;
+}
+.header_div_carrinho {
+  width: 2rem;
+}
+.header_div_carrinho-a {
+  width: 1rem;
+}
+.header_div_carrinho-img {
+  transform: scale(0.1);
+}
+.header_categoria {
+  background-color: rgb(64, 134, 240);
+  height: 3rem;
+}
+
+.footer {
+  height: 4rem;
+  background-color: rgba(34, 147, 223, 0.808);
+}
+
+.main {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(216, 216, 216);
+}
+
+.body {
+  width: 80rem;
+  display: flex;
+  justify-content: center;
+}
+.body_destaques {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: repeat(50%, 2);
+  gap: 1rem;
+  padding: 0;
+  padding-top: 5rem;
+  height: 90%;
+}
+.body_destaques-cards {
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  width: 20rem;
+  height: 27rem;
+}
+.body_destaques-cards:nth-child(1) {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.body_destaques-cards:nth-child(2) {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.body_destaques-cards:nth-child(3) {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+.body_destaques-cards:nth-child(4) {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.body_destaques-cards:nth-child(5) {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.body_destaques-cards:nth-child(6) {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+.destaques_imagem-img {
+  width: 90%;
+  height: 90%;
+  transition: 0.5s;
+}
+.destaques_imagem-img:hover {
+  transform: scale(1.05);
+}
+.destaques_imagem-a {
+  transition: 0.5s;
+}
+.destaques_imagem-a:hover {
+  transform: scale(1.2);
+}
+.destaques_titulo {
+  padding: 2%;
+}
+.destaques_link {
+  padding: 2%;
+}
+.destaques_link-a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  transition: 0.5s;
+}
+.destaques_link-a:hover {
+  color: rgb(190, 190, 190);
+}
+
+* {
+  font-family: "Quicksand", sans-serif;
+}
+
+body {
+  display: block;
+}/*# sourceMappingURL=index.css.map */
